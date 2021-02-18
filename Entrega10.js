@@ -8,9 +8,11 @@ function themeChanger(e){
     if(temaActual == "light"){
     document.getElementById("main").className = "dark";
     temaActual = "dark"
+    localStorage.setItem("theme", temaActual)
     } else {
         document.getElementById("main").className = "light";
         temaActual = "light"
+        localStorage.setItem("theme", temaActual)
     }
 }
 
@@ -110,7 +112,14 @@ function imprimir(e){
         document.getElementById("impresion").appendChild(nodoPrint)
 }
 
-let stockPuffs = 0
-let stockMesas = 0
-let stockTronos = 0
-let stockGazebos = 0
+//storage theme
+
+let ultimoTheme = localStorage.getItem("theme")
+console.log(ultimoTheme)
+
+if(ultimoTheme == "light"){
+    document.getElementById("main").className = "light";
+}
+if(ultimoTheme == "dark"){
+    document.getElementById("main").className = "dark";
+}
