@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Entrega10.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <title>Catalogo - ADA</title>
+</head>
+
+<body class="light" id="main">
+    <header>
+        <div id="themeLabel">
+            <label class="switch">
+                <input type="checkbox" id="theme">
+                <span class="slider round"></span>
+            </label>
+            <h3>Cambiar Modo:</h3>
+        </div>
+        <h1>ADA Eventos</h1>
+        <h2>Los mejores mobiliarios para tu evento.</h2>
+        <div class="box">
+            <a class="button" href="#popup1">Ver Stock</a>
+        </div>   
+        <div id="popup1" class="overlay">
+            <div class="popup">
+                <h2>El stock disponible es:</h2>
+                <a class="close" href="#">&times;</a>
+                <div class="content">
+                    Puffs:60u Mesas:6u Tronos:1u Gazebos:2u
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="div1" class="divMain">
+            <img src="puff.jpg" alt="">
+            <br>
+            <input type="text" placeholder="Cantidad de puffs" id="pc">
+        </div>
+        <div id="div2" class="divMain">
+            <img src="mesa.jpg" alt="">
+            <br>
+            <input type="text" placeholder="Cantidad de mesas" id="mc">
+        </div>
+        <div id="div3" class="divMain">
+            <img src="trono.jpg" alt="">
+            <br>
+            <input type="text" placeholder="Cantidad de tronos" id="tc">
+        </div>
+        <div id="div4" class="divMain">
+            <img src="gazebo.jpg" alt="">
+            <br>
+            <input type="text" placeholder="Cantidad de gazebos" id="gc">
+        </div>
+    </main>
+    <div id="impresion">
+        <button id="resultados">MOSTRAR RESULTADOS</button>
+    </div>
+    
+    <script src="Entrega10.js"></script>
+</body>
+
+</html>
